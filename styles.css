@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eaf2f8;
+    animation: backgroundAnimation 10s infinite linear;
+  }
+  
+  .countdown {
+    margin-top: 200px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  #timer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #timer div {
+    margin: 0 10px;
+    animation: scaleAnimation 1s alternate infinite ease-in-out;
+  }
+  
+  #timer span {
+    font-size: 70px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .smalltext {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: -10px;
+    color: #666;
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-color: #ff9999; /* light red */
+    }
+    33% {
+      background-color: #f2f2f2; /* light gray (close to white) */
+    }
+    66% {
+      background-color: #99ccff; /* light blue */
+    }
+    100% {
+      background-color: #ff9999; /* light red */
+    }
+  }
+  
+  @keyframes scaleAnimation {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+  }
+  .progressbar-container {
+    margin: 50px auto; /* Updated line */
+    width: 80%;
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #333; /* Added border style */
+  }
+  
+  #progressbar {
+
+    width: 0;
+    background-color: #2196F3;
+    height: 100%;
+  }
